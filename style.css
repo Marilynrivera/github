@@ -1,0 +1,160 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: hwb(180 42% 57%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 20pc);
+    row-gap: 1pc;
+    justify-items: center;
+    /*border: 1px solid red;*/
+    justify-content: center;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 1%, 33%);
+    padding: 0 20px;
+    color: white;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 70px;
+    left: 10%;
+}
+
+.motoContainer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slyder {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    width: 90%;
+    padding: 0 31pc;
+    scroll-snap-type: x mandatory;
+}
+
+.borderRa {
+    border-radius: 10px;
+}
+
+.card {
+    width: 19pc;
+    background-color: #383636;
+    color: white;
+}
+
+.cards {
+    flex: 0 0 115%;
+    width: 100%;
+    background-color: #383636;
+    object-fit: cover;
+    scroll-snap-align: center;
+    color: white;
+    border-radius: 10px;
+    margin: 1pc;
+}
+
+.number {
+    position: relative;
+    height: 14pc;
+    background: white;
+    color: hsl(0, 3%, 50%);
+    opacity: 0.09;
+    text-align: center;
+    font-size: 6pc;
+
+}
+
+.containerInfo {
+    padding: 0 1pc;
+    font-size: 1pc;
+}
+
+.containerInfo h5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1pc;
+}
+
+.border {
+    padding: 3px;
+    margin: 0;
+    border-radius: 6px;
+}
+
+.Border {
+    padding: 3px;
+    margin: 0;
+    border-radius: 6px;
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    width: 100%;
+    color: rgb(0, 0, 253);
+}
+
+
+.card:hover img {
+    width: 16pc;
+    top: -9px;
+    left: 8%;
+}
+
+.card:hover .number {
+    opacity: 1;
+    font-size: 8pc;
+}
